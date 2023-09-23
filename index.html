@@ -44,9 +44,6 @@
                 }, function(error) {
                     // Handle errors, if any
                     switch (error.code) {
-                        case error.PERMISSION_DENIED:
-                            alert('Permission denied');
-                            break;
                         case error.POSITION_UNAVAILABLE:
                             alert('Position information is unavailable');
                             break;
@@ -93,7 +90,6 @@
         }
     </script>
 
-    {% load static %}
     <script type="text/javascript" src="{% 'index.js' %}"></script>
 
 </body>
